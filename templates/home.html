@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<section class="hero">
+    <div class="hero-text" data-aos="fade-right">
+        <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+        <p>A passionate <strong>Full-Stack Developer</strong> building web apps and solutions.</p>
+        <a href="{% url 'contact' %}" class="btn">Hire Me</a>
+        <a href="/media/resume.pdf" class="btn outline" download>Download Resume</a>
+    </div>
+    <div class="hero-image" data-aos="fade-left">
+        <img src="{% static 'images/profile.png' %}" alt="Your Profile Picture">
+    </div>
+</section>
+{% endblock %}

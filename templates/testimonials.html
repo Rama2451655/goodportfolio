@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="testimonials">
+    <div class="container">
+        <h2>Testimonials</h2>
+        {% for fb in feedbacks %}
+        <div class="testimonial-card" data-aos="fade-up">
+            <h3>{{ fb.name }}</h3>
+            <h4>{{ fb.role }}</h4>
+            <p>"{{ fb.message }}"</p>
+            <small>{{ fb.date }}</small>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

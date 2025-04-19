@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static%}
+<section class="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm <strong>Your Name</strong>, a passionate full-stack developer with experience in building dynamic web applications using Django, React, and more.</p>
+
+        <h3>Skills</h3>
+        <ul class="skills">
+            <li>Python & Django</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React.js</li>
+            <li>SQL & PostgreSQL</li>
+            <li>Git & GitHub</li>
+        </ul>
+
+        <h3>Experience</h3>
+        <p>Worked on various freelance and academic projects focusing on clean UI and backend logic. Check out my projects to know more!</p>
+    </div>
+</section>
+<h3>Resume</h3>
+<p>You can download my resume below:</p>
+<a href="{% static 'files/your_resume.pdf' %}" class="btn" download>📄 Download Resume</a>
+
+{% endblock %}
